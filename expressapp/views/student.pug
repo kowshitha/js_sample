@@ -1,0 +1,14 @@
+html
+   head
+      title  Hello Pug
+   body
+      table(cellpadding=2,border=2,style={background:"blue",color:"white"})
+       thead 
+         th fullname 
+         th email 
+         th phno 
+       each val in allstu
+         tr 
+           td #{val.fullname}
+           td #{val.email} 
+           td #{val.mobile}

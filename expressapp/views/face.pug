@@ -1,0 +1,12 @@
+html
+   head
+      title 
+   body
+      table(cellpadding=2,border=2,style={background:"pink",color:"white"})
+       thead 
+         th NAME 
+         th COMMENT 
+       each val in allcomment
+         tr 
+           td #{val.name}
+           td #{val.comment} 
